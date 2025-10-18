@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Gift!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .reveal-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { 
+                opacity: 0; 
+                transform: scale(0.8);
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1);
+            }
+        }
+        
+        h1 {
+            color: #f5576c;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .message {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .code-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            word-break: break-all;
+        }
+        
+        .gift-icon {
+            font-size: 4rem;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .footer-text {
+            color: #f5576c;
+            font-weight: 600;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+        
+        .instructions {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .instructions strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal-container">
+        <div class="gift-icon">🎊🎉</div>
+        <h1>Awesome!!</h1>
+        
+        <p class="message">
+            এই নে, তোর ভাইফোঁটার উপহার <br>
+            Happy shopping! 💖
+        </p>
+        
+        <div class="code-box" id="giftCode">
+            
+        </div>
+        
+        <div class="instructions">
+            <strong>How to redeem:</strong>
+            <ol class="mb-0 mt-2">
+                <li>Go to this website <b>https://www.amazon.in/addgiftcard </b></li>
+                <li>Enter the code above</li>
+                <li>Enjoy your shopping!</li>
+            </ol>
+        </div>
+        
+        <p class="footer-text">
+            With love, from Rick Bhai! ❤️
+        </p>
+        
+        <div class="gift-icon">🌟💝</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Replace this with your actual Amazon gift card code
+        document.getElementById('giftCode').textContent = 'XXX-XXX-XXX';
+    </script>
+</body>
+</html>
